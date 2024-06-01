@@ -1,0 +1,49 @@
+
+  0%|                                                                                         | 0/100 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "c:\LOReFT\eva.py", line 108, in <module>
+    _ = trainer.train()
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\transformers\trainer.py", line 1842, in train
+    return inner_training_loop(
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\transformers\trainer.py", line 2186, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\transformers\trainer.py", line 3121, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\pyreft\reft_trainer.py", line 82, in compute_loss
+    _, cf_outputs = intervenable(
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\pyvene\models\intervenable_base.py", line 1443, in forward
+    counterfactual_outputs = self.model(**base, labels=labels)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\transformers\models\llama\modeling_llama.py", line 1189, in forward
+    outputs = self.model(
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\transformers\models\llama\modeling_llama.py", line 1016, in forward
+    layer_outputs = decoder_layer(
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\transformers\models\llama\modeling_llama.py", line 739, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\transformers\models\llama\modeling_llama.py", line 636, in forward
+    query_states = self.q_proj(hidden_states)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

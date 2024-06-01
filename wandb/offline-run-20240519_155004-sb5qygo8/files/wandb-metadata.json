@@ -1,0 +1,51 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.10.6",
+    "heartbeatAt": "2024-05-19T07:50:05.159937",
+    "startedAt": "2024-05-19T07:50:04.031667",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "python",
+        "-u",
+        "c:\\LOReFT\\eva.py"
+    ],
+    "state": "running",
+    "program": "c:\\LOReFT\\eva.py",
+    "codePathLocal": "eva.py",
+    "codePath": "eva.py",
+    "host": "chenming",
+    "username": "User",
+    "executable": "C:\\Program Files\\Python310\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2496.0,
+        "min": 0.0,
+        "max": 2496.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2496.0,
+            "min": 0.0,
+            "max": 2496.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 220.34960556030273,
+            "used": 203.55522918701172
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX 1650 with Max-Q Design",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1650 with Max-Q Design",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 7.8259735107421875
+    }
+}
